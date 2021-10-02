@@ -2,3 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home8/iarob/app
+    - /bin/rm -Rf $DEPLOYPATH
+    - /bin/mkdir $DEPLOYPATH
+    - /bin/cp -R src/. $DEPLOYPATH
